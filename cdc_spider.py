@@ -1,8 +1,10 @@
+import logging
 import uuid
 from datetime import datetime
 from urllib import parse
 from concurrent.futures import ThreadPoolExecutor, wait, ALL_COMPLETED
-
+from apscheduler.events import EVENT_JOB_EXECUTED, EVENT_JOB_ERROR
+from apscheduler.schedulers.background import BlockingScheduler
 from scrapy import Selector
 import requests
 
@@ -15,6 +17,23 @@ health_urls = []
 headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36'
 }
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S',
+                    filename='log.txt',
+                    filemode='a')
+scheduler = BlockingScheduler()
+
+
+def my_listener(event):
+    if event.exception:
+        print('任务出现异常！')
+    else:
+        print('任务照常运行...')
+
+
+scheduler.add_listener(my_listener, EVENT_JOB_EXECUTED | EVENT_JOB_ERROR)
+scheduler._logger = logging
 
 
 def get_article_urls():
@@ -313,16 +332,24 @@ def get_cdc(urls):
     print("爬取疾控知识完成！")
 
 
-if __name__ == "__main__":
-    executor = ThreadPoolExecutor(max_workers=10)
-
+@scheduler.scheduled_job('cron', month='1-12', day='1-31', hour='00-23', minute='49', second='0')
+def main():
     all_topic_urls = get_article_urls()
     save_category('健康知识', '')
     # 获取到健康知识每一页的url
     get_health_urls(domain_health)
-    print(health_urls)
     urls_task = executor.submit(get_health_urls, domain_health)
     health = executor.submit(get_health, health_urls)
     cdc = executor.submit(get_cdc, all_topic_urls)
     wait([urls_task, health, cdc, ], return_when=ALL_COMPLETED)
-    print("end ")
+
+
+if __name__ == "__main__":
+    executor = ThreadPoolExecutor(max_workers=10)
+    with open('log.txt', 'a', encoding='utf8') as f:
+        try:
+            scheduler.start()
+            f.write('任务运行成功!\n')
+        except Exception:
+            scheduler.shutdown()
+            f.write('***********************任务运行失败!*****************************\n')

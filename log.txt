@@ -1,0 +1,883 @@
+2020-04-26 17:49:00 base.py[line:123] INFO Running job "main (trigger: cron[month='1-12', day='1-31', hour='0-23', minute='49', second='0'], next run at: 2020-04-26 17:49:00 CST)" (scheduled at 2020-04-26 17:49:00+08:00)
+2020-04-26 17:49:00 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:53 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:53 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:54 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/zstd_10917/): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:55 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/zstd_10917/201911/t20191113_206794.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:55 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/zstd_10917/201710/t20171031_154510.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:55 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/zstd_10917/201710/t20171031_154509.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:55 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/zstd_10917/200506/t20050628_24462.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:56 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/zstd_10917/200506/t20050628_24463.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:56 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/zstd_10917/200506/t20050628_24464.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:56 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/zstd_10917/200506/t20050628_24465.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:56 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/zstd_10917/200506/t20050628_24466.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:56 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/sy/zstd_10917/200506/t20050628_24467.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:56 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/hl/): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:56 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/hl/zstd_10926/): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:57 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/hl/zstd_10926/200606/t20060606_24454.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:57 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/hl/zstd_10926/200506/t20050628_24447.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:57 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/hl/zstd_10926/200506/t20050628_24448.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:57 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/hl/zstd_10926/200506/t20050628_24449.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:57 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/hl/zstd_10926/200506/t20050628_24450.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:58 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/hl/zstd_10926/200506/t20050628_24451.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:58 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/hl/zstd_10926/200506/t20050628_24452.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:58 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/jl/hl/zstd_10926/200506/t20050628_24453.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:58 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:58 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:59 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200424_216377.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:59 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200420_216301.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:59 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200420_216288.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:59 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200420_216286.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:59 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200420_216285.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:49:59 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200417_216241.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:00 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200401_215730.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:00 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200331_215670.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:00 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200330_215630.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:00 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/index_1.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:00 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200424_216377.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:01 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200323_214650.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:01 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200319_214559.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:01 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200316_214430.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:01 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200311_214319.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:02 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200310_214270.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:02 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200308_214206.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:04 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200308_214205.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:04 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200304_214110.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:04 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200304_214092.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:04 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200304_214091.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:05 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/index_2.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:05 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200424_216377.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:05 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202003/t20200302_213998.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:05 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200226_213833.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:05 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200226_213831.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:05 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200225_213729.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:06 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200225_213728.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:06 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200225_213727.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:06 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200225_213726.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:06 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200225_213725.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:06 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/index_3.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:06 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200424_216377.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:07 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200224_213680.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:07 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200223_213634.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:07 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200223_213633.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:07 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200222_213610.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:07 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200221_213552.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:07 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200221_213493.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:08 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200220_213406.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:09 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200219_213366.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:09 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/index_4.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:09 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200424_216377.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:09 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200219_213365.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:09 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200219_213364.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:10 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200219_213363.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:10 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200218_213268.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:10 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200217_212971.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:10 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200217_212929.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:10 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200217_212928.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:10 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200216_212888.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:11 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212674.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:11 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212673.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:11 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/index_5.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:11 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200424_216377.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:11 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212671.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:11 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212669.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:12 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212668.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:12 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212653.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:12 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212652.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:12 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212650.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:12 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212649.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:12 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212641.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:13 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200214_212640.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:13 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200213_212604.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:13 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/index_6.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:13 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200424_216377.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:13 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200213_212591.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:13 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200213_212589.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:13 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200213_212590.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:14 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200213_212588.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:14 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200213_212587.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:14 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200212_212535.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:14 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200212_212524.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:14 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200212_212523.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:14 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200212_212522.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:14 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200211_212474.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:15 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/index_7.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:15 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200424_216377.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:15 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200211_212469.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:15 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200210_212441.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:15 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200210_212440.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:15 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200210_212422.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:16 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200210_212421.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:16 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200210_212420.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:16 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200210_212419.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:16 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200209_212397.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:16 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200207_212349.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:16 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200207_212347.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:16 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/index_8.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:18 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202004/t20200424_216377.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:18 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200207_212348.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:18 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200207_212346.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:18 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200206_212287.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:18 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200206_212286.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:18 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200205_212259.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:18 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200205_212258.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:19 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200205_212244.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:19 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200204_212202.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:20 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/szkb_11803/jszl_2275/202002/t20200204_212201.html): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+2020-04-26 17:50:20 connectionpool.py[line:452] WARNING Failed to parse headers (url=http://www.chinacdc.cn:80/jkzt/crb/zl/blsjb/): [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
+Traceback (most recent call last):
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/Users/yang/virtual-environment-python/spider/lib/python3.7/site-packages/urllib3/util/response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [FirstHeaderLineIsContinuationDefect(' Server \r\n')], unparsed data: ''
