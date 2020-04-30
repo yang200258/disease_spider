@@ -1,14 +1,19 @@
 import logging
+import re
 import uuid
 from datetime import datetime
 from urllib import parse
 from concurrent.futures import ThreadPoolExecutor, wait, ALL_COMPLETED
 from apscheduler.events import EVENT_JOB_EXECUTED, EVENT_JOB_ERROR
+import js2py
 from apscheduler.schedulers.background import BlockingScheduler
 from scrapy import Selector
 import requests
 
-from cdc_models import t_article, t_category
+from cdc_models_formal import t_article as t_article_test, t_category as t_category_test, \
+    t_article_category as middel_test
+from cdc_models import t_article as t_article_formal, t_category as t_category_formal, \
+    t_article_category as middel_formal
 
 unspider_title = ['烟草控制', '妇幼保健']
 domain = 'http://www.chinacdc.cn/jkzt/'
@@ -17,6 +22,12 @@ health_urls = []
 headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36'
 }
+headers_health = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+}
+organization_dict = {'传染病': '急性传染病预防控制室', '突发公共卫生事件': '卫生应急管理室', '慢性非传染性疾病': '地方病与慢性病防治室', '营养与健康': '营养与学生健康检测室',
+                     '环境与健康': '环境卫生室', '职业卫生与中毒控制': '职业卫生室', '辐射防护': '辐射安全室'}
+
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
@@ -45,8 +56,61 @@ def get_article_urls():
     return all_urls
 
 
+def get_521_content(url):
+    req = requests.get(url=url, headers=headers_health)
+    cookies = req.cookies
+    cookies = '; '.join(['='.join(item) for item in cookies.items()])
+    txt_521 = req.text
+    txt_521 = ''.join(re.findall('<script>(.*?)</script>', txt_521))
+    return (txt_521, cookies, req)
+
+
+def fixed_fun(function, url):
+    print(function)
+    js = function.replace("<script>", "").replace("</script>", "").replace("{eval(", "{var my_data_1 = (")
+    # print(js)
+    # 使用js2py的js交互功能获得刚才赋值的data1对象
+    context = js2py.EvalJs()
+    context.execute(js)
+    js_temp = context.my_data_1
+    print(js_temp)
+    index1 = js_temp.find("document.")
+    index2 = js_temp.find("};if((")
+    js_temp = js_temp[index1:index2].replace("document.cookie", "my_data_2")
+    new_js_temp = re.sub(r'document.create.*?firstChild.href', '"{}"'.format(url), js_temp)
+    # print(new_js_temp)
+    # print(type(new_js_temp))
+
+    context.execute(new_js_temp)
+    if context.my_data_2:
+        data = context.my_data_2
+    else:
+        js_temp = js_temp[index1:index2].replace("document.cookie", "my_data_2")
+        new_js_temp = re.sub(r'document.create.*?firstChild.href', '"{}"'.format(url), js_temp)
+        data = context.my_data_2
+    # print(data)
+    __jsl_clearance = str(data).split(';')[0]
+    return __jsl_clearance
+
+
+def get_health_req(url):
+    for i in range(2, 2000):
+        txt_521, cookies, req = get_521_content(url)
+        if req.status_code == 521:
+            __jsl_clearance = fixed_fun(txt_521, url)
+            headers_health['Cookie'] = __jsl_clearance + ';' + cookies
+            res1 = requests.get(url=url, headers=headers_health)
+            if res1.status_code == 200:
+                return res1
+            else:
+                continue
+        else:
+            return req
+
+
 def get_health_urls(url):
-    res_health = requests.get(url).content
+    res = get_health_req(url)
+    res_health = res.content
     res_text = res_health.decode('utf-8', 'ignore').encode('utf-8', 'ignore')
     health_sel = Selector(text=res_text)
     urls = health_sel.xpath("//div[@class='mainL fl']/ul/li/div[@class='txt']/h4/a/@href").extract()
@@ -56,13 +120,13 @@ def get_health_urls(url):
         # 处理下一页逻辑
         next_page_url = health_sel.xpath("//ul[@class='pagination']/li/a/@href").extract()[-1]
         get_health_urls(next_page_url)
-    except:
+    except Exception as e:
         print("获取健康知识url完成")
         return
 
 
 def get_health_article(url):
-    res_article = requests.get(url).content
+    res_article = requests.get(url, headers=headers_health).content
     res_article = res_article.decode('utf-8', 'ignore').encode('utf-8', 'ignore')
     article_sel = Selector(text=res_article)
     title = article_sel.xpath("//div[@class='title']/h3/text()").extract()[0]
@@ -91,12 +155,11 @@ def get_topic(url):
             crb_article_url, crb_level2_category = levele2_disease(next_url, url)
             # 保存二级分类
             save_category(crb_level2_category, '传染病')
-            # executor.submit(save_category, crb_level2_category, '传染病')
             # print(crb_level2_category, crb_article_url)
-            # deal_article_page(crb_article_url, crb_level2_category)
+            deal_article_page(crb_article_url, '传染病')
             # 启动多线程 **********************
-            task1 = executor.submit(deal_article_page, crb_article_url, crb_level2_category)
-            wait([task1], return_when=ALL_COMPLETED)
+            # task1 = executor.submit(deal_article_page, crb_article_url, crb_level2_category)
+            # wait([task1], return_when=ALL_COMPLETED)
     else:
         # 一级分类名称
         disease_category = next_page_sel.xpath("//div[@class='cn-title']/p/text()").extract()[0]
@@ -113,10 +176,10 @@ def get_topic(url):
             if next_page_topic == '知识天地':
                 # 处理不带有二级分类的文章
                 article_url = parse.urljoin(next_url, next_page_url)
-                # deal_article_page(article_url, disease_category)
+                deal_article_page(article_url, disease_category)
                 # 启动多线程 **********************
-                task2 = executor.submit(deal_article_page, article_url, disease_category)
-                wait([task2], return_when=ALL_COMPLETED)
+                # task2 = executor.submit(deal_article_page, article_url, disease_category)
+                # wait([task2], return_when=ALL_COMPLETED)
             else:
                 # 处理带二级分类的文章(突发事件+慢病)
                 next_page_url = next_page_url.strip()
@@ -137,15 +200,15 @@ def get_topic(url):
                     except IndexError as e:
                         level3_url = parse.urljoin(level2_url_article, item_url, item_category)
 
-                        # deal_article_page(level3_url, item_category)
+                        deal_article_page(level3_url, disease_category)
                         # 启动多线程 **********************
-                        task3 = executor.submit(deal_article_page, level3_url, item_category)
-                        wait([task3])
+                        # task3 = executor.submit(deal_article_page, level3_url, item_category)
+                        # wait([task3])
                         continue
-                    # deal_article_page(levele2_url, level2_category)
+                    deal_article_page(levele2_url, disease_category)
                     # 启动多线程 **********************
-                    task4 = executor.submit(deal_article_page, levele2_url, level2_category)
-                    wait([task4])
+                    # task4 = executor.submit(deal_article_page, levele2_url, level2_category)
+                    # wait([task4])
         else:
             return
 
@@ -218,7 +281,6 @@ def deal_article_content(previous_url, article_url, category):
     article_url = article_url.strip()
     if 'html' in article_url:
         url = parse.urljoin(previous_url, article_url)
-        # print(url, category)
         if domain in url:
             res = requests.get(url, headers=headers).text
             res_sel = Selector(text=res)
@@ -229,9 +291,10 @@ def deal_article_content(previous_url, article_url, category):
             create_time = res_sel.xpath("//span[@class='info-date']/text()").extract()[0]
             createtime = datetime.strptime(create_time, '%Y-%m-%d')
             content = res_sel.xpath("//div[@class='cn-main-detail']").extract()[0]
-            # save_article(article_title, createtime, category, content, url, '中国疾病预防控制中心')
-            task = executor.submit(save_article, article_title, createtime, category, content, url, '中国疾病预防控制中心')
-            wait([task])
+            content = daal_img(content, url)
+            save_article(article_title, createtime, category, content, url, '中国疾病预防控制中心')
+            # task = executor.submit(save_article, article_title, createtime, category, content, url, '中国疾病预防控制中心')
+            # wait([task])
         else:
             # print("该文章引用了其他来源地址！")
             if 'http://news.sciencenet.cn/' in url:
@@ -244,73 +307,136 @@ def deal_article_content(previous_url, article_url, category):
                 createtime = datetime.strptime(create_time, '%Y-%m-%d')
                 content_list = res_sel.xpath("//*[@id='content1']/p").extract()
                 content = '\n\t'.join(content_list)
-                # save_article(article_title, createtime, category, content, url, '中国疾病预防控制中心')
-                task = executor.submit(save_article, article_title, createtime, category, content, url, '中国疾病预防控制中心')
-                wait([task])
+                content = daal_img(content, url)
+                save_article(article_title, createtime, category, content, url, '中国疾病预防控制中心')
+                # task = executor.submit(save_article, article_title, createtime, category, content, url, '中国疾病预防控制中心')
+                # wait([task])
     else:
         return
+
+
+def daal_img(content, url):
+    """
+    转换文章图片src属性
+    :param content: 文章内容
+    :param previous_url: 图片前置url
+    :return: 转换图片src后的文章内容
+    """
+    info_src = re.findall(r'\ssrc="(.*jpg)"\s', content)
+    info_href = re.findall(r'\shref="(.*)"\s', content)
+    if len(info_src):
+        url_list = url.split('/')[:-1]
+        url_join = '/'.join(url_list) + '/'
+        for item in info_src:
+            url_new = parse.urljoin(url_join, item)
+            content = content.replace(item, url_new)
+    if len(info_href):
+        url_list = url.split('/')[:-1]
+        url_join = '/'.join(url_list) + '/'
+        for item in info_href:
+            url_new = parse.urljoin(url_join, item)
+            content = content.replace(item, url_new)
+    return content
 
 
 def save_article(title, createtime, category_name, content, note, source):
-    article = t_article()
-    keyword = category_name if category_name in content else ''
-    article.article_id = uuid.uuid1()
-    article.category_name = category_name
-    article.title = title
-    article.keyword = keyword
-    article.symptom = ''
-    article.content = content
-    article.source = source
-    article.article_state = '0'
-    article.check_option = ''
-    article.createtime = createtime
-    article.create_user_id = '2CEBCA185F4F4464B6017AB1C4BDB843'
-    article.create_user_name = '超级管理员'
+    article = t_article_test()
+    article_formal = t_article_formal()
+
+    m_test = middel_test()
+    m_formal = middel_formal()
+
+    keyword = category_name if category_name in content else None
+    id = uuid.uuid1()
+    article_formal.article_id = article.article_id = id
+    article_formal.category_name = article.category_name = category_name
+
+    category_id_test = t_category_test.get(t_category_test.category_name == category_name).category_id
+    category_id_formal = t_category_formal.get(t_category_formal.category_name == category_name).category_id
+
+    m_test.article_id = article.article_id
+    m_test.category_id = category_id_test
+
+    m_formal.article_id = article.article_id
+    m_formal.category_id = category_id_formal
+
+    article_formal.title = article.title = title
+    article_formal.keyword = article.keyword = keyword
+    # article_formal.symptom = article.symptom = null
+    article_formal.content = article.content = content
+    article_formal.source = article.source = source
+    article_formal.article_state = article.article_state = '0'
+    # article_formal.CHECK_OPINION = article.CHECK_OPINION = ''
+    article_formal.create_time = article.create_time = createtime
+    article_formal.create_user_id = article.create_user_id = '2CEBCA185F4F4464B6017AB1C4BDB843'
+    article_formal.create_user_name = article.create_user_name = '超级管理员'
     now = datetime.now()
     now = datetime.strftime(now, "%Y-%m-%d %H:%M:%S")
-    article.update_time = now
-    article.update_user_id = '2CEBCA185F4F4464B6017AB1C4BDB843'
-    article.update_user_name = '超级管理员'
-    article.note = note
-    article.data_source_code = '2'
-    article.data_source_name = '网络爬取'
-    article.is_active = '-1'
-
-    exist_article = t_article.select().where(t_article.note == article.note)
-    if exist_article:
-        article.save()
-    else:
-        article.save(force_insert=True)
+    article_formal.update_time = article.update_time = now
+    article_formal.update_user_id = article.update_user_id = '2CEBCA185F4F4464B6017AB1C4BDB843'
+    article_formal.update_user_name = article.update_user_name = '超级管理员'
+    article_formal.note = article.note = note
+    article_formal.data_source_code = article.data_source_code = '2'
+    article_formal.data_source_name = article.data_source_name = '网络爬取'
+    article_formal.is_active = article.is_active = '-1'
+    try:
+        exist_article_test = t_article_test.select().where(t_article_test.note == article.note)
+        if exist_article_test:
+            logging.info("url为 {} 的文章已存在，不做操作！".format(note))
+        else:
+            article.save(force_insert=True)
+            m_test.save(force_insert=True)
+    except Exception as e:
+        print(e)
+    try:
+        exist_article_formal = t_article_formal.select().where(t_article_formal.note == article.note)
+        if exist_article_formal:
+            logging.info("formal中url为 {} 的文章已存在，不做操作！".format(note))
+        else:
+            article_formal.save(force_insert=True)
+            m_formal.save(force_insert=True)
+    except Exception as e:
+        print(e)
 
 
 def save_category(category_name, parent_name):
-    category = t_category()
-
+    category = t_category_test()
+    category_formal = t_category_formal()
     uuid_str = uuid.uuid1()
-    category.category_id = uuid_str
-    category.category_name = category_name
-    parent_id = t_category.get(t_category.category_name == parent_name) if parent_name else ''
-    category.parent_id = parent_id
+    category_formal.category_id = category.category_id = uuid_str
+    category_formal.category_name = category.category_name = category_name
+    if parent_name:
+        parent_id = t_category_test.get(t_category_test.category_name == parent_name)
+        category_formal.parent_id = category.parent_id = parent_id
+    else:
+        parent_id = None
+        organization_name = organization_dict.get(category_name, None)
+        category.ORGANIZATION_NAME = category_formal.ORGANIZATION_NAME = organization_name
     level = 2 if parent_name else 1
-    category.level = level
+    category_formal.level = category.level = level
     level_code = parent_id if parent_name else uuid_str
-    category.level_code = level_code
+    category_formal.level_code = category.level_code = level_code
     now = datetime.now()
     now = datetime.strftime(now, "%Y-%m-%d %H:%M:%S")
-    category.create_time = now
-    category.create_user_id = '2CEBCA185F4F4464B6017AB1C4BDB843'
-    category.create_user_name = '超级管理员'
-    category.update_time = now
-    category.update_user_id = '2CEBCA185F4F4464B6017AB1C4BDB843'
-    category.update_user_name = '超级管理员'
-    category.note = ''
-    category.organization_name = ''
+    category_formal.create_time = category.create_time = now
+    category_formal.create_user_id = category.create_user_id = '2CEBCA185F4F4464B6017AB1C4BDB843'
+    category_formal.create_user_name = category.create_user_name = '超级管理员'
+    category_formal.update_time = category.update_time = now
+    category_formal.update_user_id = category.update_user_id = '2CEBCA185F4F4464B6017AB1C4BDB843'
+    category_formal.update_user_name = category.update_user_name = '超级管理员'
+    category_formal.note = category.note = ''
+    category_formal.organization_name = category.organization_name = ''
 
-    exist_category = t_category.select().where(t_category.category_name == category.category_name)
+    exist_category = t_category_test.select().where(t_category_test.category_name == category.category_name)
+    exist_category_formal = t_category_formal.select().where(t_category_formal.category_name == category.category_name)
     if exist_category:
-        return
+        logging.info("名称为 {} 的类别已存在，不做操作！".format(category_name))
     else:
         category.save(force_insert=True)
+    if exist_category_formal:
+        logging.info("formal中名称为 {} 的类别已存在，不做操作！".format(category_name))
+    else:
+        category_formal.save(force_insert=True)
 
 
 def get_health(urls):
@@ -332,20 +458,20 @@ def get_cdc(urls):
     print("爬取疾控知识完成！")
 
 
-@scheduler.scheduled_job('cron', month='1-12', day='1-31', hour='00-23', minute='49', second='0')
+@scheduler.scheduled_job('cron', month='1-12', day='1-31', hour='00', minute='02', second='0')
 def main():
     all_topic_urls = get_article_urls()
     save_category('健康知识', '')
-    # 获取到健康知识每一页的url
+    # 获取到健康知识每一页的url[[
     get_health_urls(domain_health)
-    urls_task = executor.submit(get_health_urls, domain_health)
     health = executor.submit(get_health, health_urls)
     cdc = executor.submit(get_cdc, all_topic_urls)
-    wait([urls_task, health, cdc, ], return_when=ALL_COMPLETED)
+    wait([health, cdc], return_when=ALL_COMPLETED)
 
 
 if __name__ == "__main__":
     executor = ThreadPoolExecutor(max_workers=10)
+    main()
     with open('log.txt', 'a', encoding='utf8') as f:
         try:
             scheduler.start()

@@ -1,20 +1,20 @@
 from peewee import *
 
-db = MySQLDatabase("xxcj", host="59.212.39.6", port=3306, user="jikong", password="Zh~m,nhG!3")
-# db_formal = MySQLDatabase("spider", host="127.0.0.1", port=3306, user="root", password="root")
+# db = MySQLDatabase("xxcj", host="59.212.39.6", port=3306, user="jikong", password="Zh~m,nhG!3")
+db_formal = MySQLDatabase("xxcj", host="59.212.39.7", port=3306, user="xxcj", password="xz2D%&MPC2mTlF#x")
 
-
-class BaseModelTest(Model):
-    class Meta:
-        database = db
-
-
-# class BaseModelFormal(Model):
+#
+# class BaseModelTest(Model):
 #     class Meta:
-#         database = db_formal
+#         database = db
 
 
-class t_article(BaseModelTest):
+class BaseModelFormal(Model):
+    class Meta:
+        database = db_formal
+
+
+class t_article(BaseModelFormal):
     article_id = UUIDField(primary_key=True)
     category_name = CharField()
     title = CharField()
@@ -36,11 +36,11 @@ class t_article(BaseModelTest):
     is_active = CharField()   #是否有效
 
 
-class t_category(BaseModelTest):
+class t_category(BaseModelFormal):
     category_id = UUIDField(primary_key=True)
     category_name = CharField()
-    parent_id = CharField()
-    level = IntegerField()
+    parent_id = CharField(null=True)
+    level = BlobField()
     level_code = UUIDField()
     create_time = DateTimeField()
     create_user_id = CharField()
@@ -52,11 +52,11 @@ class t_category(BaseModelTest):
     ORGANIZATION_NAME = CharField(default=None)
 
 
-class t_article_category(BaseModelTest):
+class t_article_category(BaseModelFormal):
     article_id = UUIDField()
     category_id = UUIDField()
 
 
 if __name__ == "__main__":
-    db.create_tables([ t_category])
-    # db_formal.create_tables([t_article_test, t_category_test])
+    # db.create_tables([t_article_test, t_category_test])
+    db_formal.create_tables([t_article, t_category])
